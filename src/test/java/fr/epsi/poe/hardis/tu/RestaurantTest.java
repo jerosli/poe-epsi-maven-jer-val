@@ -58,7 +58,7 @@ public class RestaurantTest {
         //Act
         restaurant.setAdresse("12, rue du Moulin Saint-Bernard");
         //Assert
-        assertTrue(restaurant.getAdresse().contains("FRANCE"));
+        assertTrue("L'adresse ne contient pas FRANCE",restaurant.getAdresse().contains("FRANCE"));
     }
 
     @Test
